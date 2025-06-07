@@ -1,5 +1,4 @@
-import { openDatabase } from '../lib/utils';
-
+import { openDatabase } from '../lib/database';
 const sql = openDatabase();
 
 async function listInvoices() {

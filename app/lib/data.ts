@@ -7,7 +7,8 @@ import {
   LatestInvoiceRaw,
   Revenue,
 } from "./definitions";
-import { formatCurrency, openDatabase } from "./utils";
+import { formatCurrency } from "./utils";
+import { openDatabase } from "./database";
 
 const sql = openDatabase();
 

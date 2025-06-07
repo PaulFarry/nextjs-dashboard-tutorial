@@ -1,4 +1,3 @@
-import postgres from 'postgres';
 import { Revenue } from './definitions';
 
 export const formatCurrency = (amount: number) => {
@@ -8,17 +7,6 @@ export const formatCurrency = (amount: number) => {
   });
 };
 
-
-export const openDatabase = () => {
-  return postgres('', {
-    host                 : process.env.POSTGRES_HOST || '',            // Postgres ip address[s] or domain name[s]
-    port                 : 5432,          // Postgres server port[s]
-    database             : process.env.POSTGRES_DATABASE || '',           // Name of database to connect to
-    username             : process.env.POSTGRES_USER || '',            // Username of database user
-    password             : process.env.POSTGRES_PASSWORD || '',            // Password of database user
-    ssl                  : false, 
-  })
-};
 
 export const formatDateToLocal = (
   dateStr: string,

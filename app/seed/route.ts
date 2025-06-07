@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import { invoices, customers, revenue, users } from "../lib/placeholder-data";
-import { openDatabase } from "../lib/utils";
+import { openDatabase } from '../lib/database';
 
 const sql = openDatabase();
 
